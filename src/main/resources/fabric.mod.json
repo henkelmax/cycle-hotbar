@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "cyclehotbar",
+  "version": "${version}",
+  "name": "Cycle Hotbar",
+  "description": "Cycle the hotbar.",
+  "authors": [
+    "Max Henkel"
+  ],
+  "license": "All Rights Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.maxhenkel.cyclehotbar.CycleHotbar"
+    ]
+  },
+  "mixins": [
+    "cyclehotbar.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_dependency}",
+    "java": ">=17"
+  },
+  "breaks": {
+    "fabric-api": "<${min_fabric_version}"
+  }
+}
